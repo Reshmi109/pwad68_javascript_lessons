@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td,th {
+            border: 2px solid rgb(32, 32, 31);
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <H3>Flower List With Table</H3>
+    <script>
+        const flowers = ["Rose", "Waterlily", "Tulip", "Sunflower"];
+        let sn=1;
+        let output = "<table>";
+                    output += "<tr><th>SN</th><th>Flower Name</th></tr>";
+
+        for (let i = 0; i < flowers.length; i++) {
+            output += "<tr>"; 
+            output += "<td>" + sn + "</td>";
+             output += "<td>" + flowers[i] + "</td>";
+            output += "</tr>";
+            sn++;
+
+
+        }
+        output += "</table>";
+
+        document.write(output);
+
+    </script>
+</body>
+
+</html>

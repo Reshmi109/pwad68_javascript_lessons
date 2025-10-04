@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>Flower List</H3>
+    <script>
+        const names = ["Kaniz","Fatema","Reshma","Reshmi"];
+        for(let i = 0; i<names.length;i++){
+           document.write(names[i] + "<br>");
+
+        }
+        
+    </script>
+    <hr>
+     <script>
+       document.write("<ol>");
+        for(let i = 0; i<names.length;i++){
+           document.write("<li>" + names[i] + "</li>");
+
+        }
+        document.write("</ol>");
+        
+    </script>
+    <hr>
+
+    <script>
+        let output="<ul>";
+      
+        for(let i = 0; i<names.length;i++){
+
+           output += "<li>" + names[i] + "</li>";
+
+        }
+        output += "</ul>";
+        document.write(output);
+     
+        
+    </script>
+</body>
+</html>
