@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #display{ 
+            width: 80px;
+            height: 20px;
+            background-color:darkseagreen ;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Caluculator Different Page</h3>
+    <div id = "display"></div>
+    <script>
+       function SumFunc(x,y){
+        let z;
+        x=prompt("Enter first number : ");
+                y=prompt("Enter second number : ");
+                x=parseInt(x);
+                y=parseInt(y);
+              z=x+y;
+              document.getElementById("display").innerHTML="Total is : " + z; //page ei output show korbe alert dekhabe na
+              
+
+
+       }
+       function MULTI(x,y){
+        x=prompt("Enter first number : ");
+                y=prompt("Enter second number : ");
+                // x=parseInt(x);
+                // y=parseInt(y);
+               alert( x*y);
+              
+
+
+       }
+       
+       
+    </script>
+   
+<button onclick="SumFunc()">SUM</button>
+<button onclick="MULTI()">MULTI</button>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Java Script Registration Form</h3>
+    <form action="" name="rgs">
+        Name : <br>
+        <input type="text" name="fullname" placeholder="Enter your name"><br>
+        Gender : <br>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female <br>
+        District : <br>
+        <select name="district" id="">
+            <option value="">Select One</option>
+            <option>Dhaka</option>
+            <option>Rajshahi</option>
+            <option>Khulna</option>
+            <option>Tangail</option>
+        </select> <br>
+
+        Address : <br>
+        <textarea name="address" id="" placeholder="Enter address"></textarea> <br>
+        <button onclick="form_handle()" type="button">Submit</button>
+        <!-- <input type="button"> -->
+
+    </form>
+
+    <script>
+        function form_handle() {
+            let fname = document.rgs.fullname.value;
+            let gender = document.rgs.gender.value;
+            let district = document.rgs.district.value;
+            let address = document.rgs.address.value;
+
+            alert(fname);
+            alert(gender);
+            alert(district);
+            alert(address);
+
+
+
+        }
+    </script>
+</body>
+
+</html>
