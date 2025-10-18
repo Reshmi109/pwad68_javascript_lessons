@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Find prime Number of NOt</h3>
+    <script>
+        function CheckPrime(n) {
+           if(n==1){
+            return n + " is not a prime number"
+
+           }
+            if(n==2){
+            return n + " is a prime number";
+
+           }
+           else{
+
+            for(let x=2; x<n; x++){
+                if(n%x==0){
+                     return n + " is not a prime number"
+
+                }
+
+            }
+
+           }
+
+           return n + " is a prime number";
+
+        }  
+
+        //call function
+
+       document.write( CheckPrime(prompt("Enter any number : ")));
+
+
+
+    </script>
+</body>
+
+</html>
