@@ -44,6 +44,13 @@
             let gender = document.rgs.gender.value;
             let district = document.rgs.district.value;
             let address = document.rgs.address.value;
+            let skills;
+            let checkboxes= document.getElementsByClassName("skills");
+            for(let i=0; i<checkboxes.length; i++){
+                if(checkboxes[i].checked){
+                    skills += checkboxes[i].value + ",";
+                }
+            }
 
             // alert(fname);
             // alert(gender);
