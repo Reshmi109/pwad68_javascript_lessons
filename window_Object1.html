@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        Name :
+        <input type="text" name="fname"> <br> <br>
+        Contact :
+                <input type="text" name="number"> <br> <br>
+                Remarks :
+                <textarea name="text" id=""></textarea> <br> <br>
+                <a href="" onclick="Form_show()">Click Here</a>
+
+
+    </form>
+
+    
+
+
+    <script>
+       function Form_show()
+       {
+                   let p = window.open("","abc","width=400,height=300")
+
+        let x = document.myform.fname.value;
+        let y = document.myform.number.value;
+        let z = document.myform.text.value;
+
+        let output = "The fullname is" + x + "<br>" + y + "<br>" + z ;
+        p.document.write(output);
+
+       }
+    </script>
+</body>
+</html>
