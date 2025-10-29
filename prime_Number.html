@@ -7,21 +7,25 @@
 </head>
 <body>
     <script>
-function factorial(n) {
-  let fact = 1;
 
-  for (let i = 1; i <= n; i++) {
-    fact = fact * i;
-  }
+        let n = parseInt(prompt("Enter a number:")); 
+       if(n==1){
+        document.write(n + "is not a prime number");
+       }
+       if(n==2){
+                document.write(n + "is a prime number");
+       }
+       else{
+        for(let i=2;i<n;i++){
+            if(n%i==0){
+                document.write(n + "is not a prime number");
+                
+            }
+        }
+                        document.write(n + "is a prime number");
 
-  return fact;
-}
 
-let num = parseInt(prompt("Enter a number:"));
-let result = factorial(num);
-
-document.write("Factorial of " + num + " is: " + result);
-</script>
-
+       }
+    </script>
 </body>
 </html>

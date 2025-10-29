@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n1 = parseInt(prompt("Enter a number:"));
+        let n2 = parseInt(prompt("Enter a number:"));
+        let n3 = parseInt(prompt("Enter a number:"));
+        const numbers = [n1, n2, n3];
+        let max = numbers[0];
+        let min = numbers[0];
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                max = numbers[i];
+            }
+            if (numbers[i] < min) {
+                min = numbers[i];
+            }
+
+        }
+        document.write("Maximum number : " + max + "Minimum number : " + min);
+
+    </script>
+</body>
+
+</html>
